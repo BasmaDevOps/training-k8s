@@ -15,7 +15,7 @@ spec:
         app: frontend
     spec:
       containers:
-      - image: issaouib/compare-appf25
+      - image: basmaoueslati/compare-appt2025
         name: compare-container
 ---
 apiVersion: v1
