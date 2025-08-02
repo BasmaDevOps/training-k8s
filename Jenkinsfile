@@ -24,7 +24,7 @@ pipeline {
         //Continuous Deployment
         stage('Deploy') {
             steps {
-                withKubeConfig(credentialsId: 'kubernetes') {
+                withKubeConfig(credentialsId: 'kubeconfig') {
                     sh "kubectl apply -f compare-app.yaml"
                 }
             }  
