@@ -15,7 +15,7 @@ spec:
         app: frontend
     spec:
       containers:
-      - image: basmadevops/compare-appt2025
+      - image: basmadevops/compareapp-ingress
         name: compare-container
 ---
 apiVersion: v1
