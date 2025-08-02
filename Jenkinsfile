@@ -16,8 +16,8 @@ pipeline {
         stage('Docker Build&Push') {
             steps {
                 withDockerRegistry(credentialsId: 'docker', url: "") {
-                    sh 'docker build -t basmadevops/compare-appt2025 .'
-                    sh 'docker push basmadevops/compare-appt2025'
+                    sh 'docker build -t basmadevops/compareapp-ingress .'
+                    sh 'docker push basmadevops/compareapp-ingress'
                 }
             }
         }
